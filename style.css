@@ -65,6 +65,26 @@ p {
     opacity: 0.5;
 }
 
+.section {
+    padding: 80px 0;
+}
+
+.section-category {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-size: 34px;
+    line-height: 1.058823529;
+    letter-spacing: -0.03em;
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+
 /* Landing */
 .landing {
     text-align: center;
@@ -128,6 +148,55 @@ p {
 }
 
 
+/* Program */
+.program .row:first-child {
+    margin-bottom: 32px;
+}
+
+.program .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.program .col-md-4:last-child {
+    margin-bottom: 0;
+}
+
+.program .section-category {
+    color: #009B4D;
+}
+
+.program-card {
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    padding: 24px 0 32px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.program-card:hover {
+    background-color: #3141C5;
+    box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 0px 13px 18px rgba(0, 0, 0, 0.15);
+}
+
+.program-card:hover strong {
+    color: #fff;
+}
+
+.program-card img {
+    display: block;
+    width: auto;
+    height: 195px;
+    margin: 0 auto 16px;
+}
+
+.program-card strong {
+    font-size: 18px;
+    line-height: 1.333333333;
+    letter-spacing: -0.02em;
+    transition: color 300ms ease-in-out;
+}
 
 
 /* >= 768px이상 (Desktop) ----------------------------------------*/
@@ -143,6 +212,22 @@ p {
         height: 56px;
         font-size: 18px;
         line-height: 1.55555555;
+    }
+
+    .section-category {
+        font-size: 22px;
+        line-height: 1.09090909;
+        margin-bottom: 16px;
+    }
+    
+    .section {
+        padding-bottom: 96px;
+    }
+
+    .section-title {
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 32px;
     }
 
     /* Landing */
@@ -169,10 +254,28 @@ p {
     .service .col-12:first-child {
         margin-bottom: 0;
     }
-    
+
     .service-title {
         font-size: 26px;
         line-height: 1.30769230;
+    }
+
+    /* Program */
+    .program {
+        text-align: center;
+    }
+
+    .program .row:first-child {
+        margin-bottom: 72px;
+    }
+
+    .program-card img {
+        margin-bottom: 24px;
+    }
+
+    .program-card strong {
+        font-size: 20px;
+        line-height: 1.2;
     }
 
 }
