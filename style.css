@@ -108,8 +108,29 @@ p {
 }
 
 
+/* Service */
+.service {
+    background-color: #F4F5F7;
+    padding: 80px 0;
+}
 
-/* >= 768px이상 (Desktop) */
+.service .col-12:first-child {
+    margin-bottom: 40px;
+}
+
+.service-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3636363636;
+    letter-spacing: -0.04em;
+    color: #2B292D;
+    margin-bottom: 16px;
+}
+
+
+
+
+/* >= 768px이상 (Desktop) ----------------------------------------*/
 @media screen and (min-width: 768px) {
     /* Reset CSS */
     p {
@@ -143,6 +164,17 @@ p {
     .landing .button-group .fill-button:first-child {
         margin-right: 16px;
     }
+
+    /* Service */
+    .service .col-12:first-child {
+        margin-bottom: 0;
+    }
+    
+    .service-title {
+        font-size: 26px;
+        line-height: 1.30769230;
+    }
+
 }
 
 /* Custom Grid System - Fix container width */
